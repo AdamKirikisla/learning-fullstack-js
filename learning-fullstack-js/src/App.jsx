@@ -1,7 +1,10 @@
+import Header from "./Components/Header"
+
 export default function App() {
     return (
     <>
-      <h1>My Full-Stack JS Roadmap</h1>
+      <Header />
+
     </>
   )
 } 
