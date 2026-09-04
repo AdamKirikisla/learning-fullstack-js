@@ -1,5 +1,6 @@
 import HTML from "./Foundations/HTML"
 import CSS from "./Foundations/CSS"
+import JavaScript from "./Foundations/JavaScript"
 
 export default function Foundations(){
     return(
@@ -9,6 +10,7 @@ export default function Foundations(){
         <p>The browser platform. Nothing you learn later replaces this.</p>
         <HTML />
         <CSS />
+        <JavaScript />
 
 
         </>
