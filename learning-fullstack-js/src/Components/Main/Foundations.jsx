@@ -1,6 +1,7 @@
 import HTML from "./Foundations/HTML"
 import CSS from "./Foundations/CSS"
 import JavaScript from "./Foundations/JavaScript"
+import GitHub from "./Foundations/GitHub"
 
 export default function Foundations(){
     return(
@@ -11,6 +12,7 @@ export default function Foundations(){
         <HTML />
         <CSS />
         <JavaScript />
+        <GitHub />
 
 
         </>
