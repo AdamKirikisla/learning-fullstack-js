@@ -1,4 +1,5 @@
 import HTML from "./Foundations/HTML"
+import CSS from "./Foundations/CSS"
 
 export default function Foundations(){
     return(
@@ -7,6 +8,7 @@ export default function Foundations(){
         <h2>Foundations</h2>
         <p>The browser platform. Nothing you learn later replaces this.</p>
         <HTML />
+        <CSS />
 
 
         </>
