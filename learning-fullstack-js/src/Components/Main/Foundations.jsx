@@ -9,13 +9,12 @@ export default function Foundations(){
         <p>PHASE 01</p>
         <h2>Foundations</h2>
         <p>The browser platform. Nothing you learn later replaces this.</p>
-        <HTML />
-        <CSS />
-        <JavaScript />
-        <GitHub />
-
-
+        <div className="phase-grid">
+          <HTML />
+          <CSS />
+          <JavaScript />
+          <GitHub />
+        </div>
         </>
-
     )
 }

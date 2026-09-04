@@ -2,7 +2,7 @@ export default function GitHub(){
     return(
         
         <div className="card">
-            <p>04</p>
+            <p className="step">04</p>
             <h2>Git / GitHub</h2>
             <p>Git saves versions of your code so you can undo mistakes; 
                 GitHub stores those versions online. Learn to commit, push, branch, and open a pull request.

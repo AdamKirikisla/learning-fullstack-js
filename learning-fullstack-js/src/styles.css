@@ -1,8 +1,40 @@
-body{
-    margin: 0;
-    background-color: antiquewhite;
+:root{
+    --orange: #eb7a34
 }
 
-.card{
-    
+
+body{
+    margin: 0;
+    background-color: whitesmoke;
+}
+h1{
+    font-size: 4rem;
+}
+
+section{
+    display: flex;
+    flex-direction: column;
+}
+
+.phase-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+  padding: 52px 0;
+}
+
+.card {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 16px;
+  cursor: pointer;
+  transition: .4s ease-in-out;
+}
+.card:hover{
+    transform: scale(1.04);
+}
+
+span,
+.step{
+    color: var(--orange);
 }

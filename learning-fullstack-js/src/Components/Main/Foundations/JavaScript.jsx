@@ -2,7 +2,7 @@ export default function JavaScript(){
     return(
         
         <div className="card">
-            <p>03</p>
+            <p className="step">03</p>
             <h2>JavaScript</h2>
             <p>JavaScript adds logic to the webpage: react to clicks, change content, 
                 load data from a server. This is the biggest step — 
