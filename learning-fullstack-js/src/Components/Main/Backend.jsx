@@ -1,5 +1,6 @@
 import NodeJs from "./Backend/NodeJs"
 import Databases from "./Backend/Databases"
+import ExpressJs from "./Backend/ExpressJs"
 
 export default function Backend(){
     return(
@@ -12,6 +13,7 @@ export default function Backend(){
               <div className="phase-grid">
                 <NodeJs />
                 <Databases />
+                <ExpressJs />
                 
               </div>
             </section>
