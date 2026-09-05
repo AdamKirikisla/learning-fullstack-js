@@ -1,40 +1,222 @@
-:root{
-    --orange: #eb7a34
+@import url("https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=IBM+Plex+Mono:wght@400;500&display=swap");
+
+/* Tokens */
+:root {
+  --orange: #eb7a34;
+  --bg: oklch(0.968 0.008 85);
+  --surface: oklch(0.995 0.003 85);
+  --ink: oklch(0.26 0.012 70);
+  --ink-soft: oklch(0.42 0.012 70);
+  --ink-mute: oklch(0.58 0.012 70);
+  --line: oklch(0.88 0.01 80);
+
+  --serif: "Instrument Serif", Georgia, serif;
+  --sans: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --mono: "IBM Plex Mono", ui-monospace, monospace;
 }
 
-
-body{
-    margin: 0;
-    background-color: whitesmoke;
-}
-h1{
-    font-size: 4rem;
+/* Base */
+* {
+  box-sizing: border-box;
 }
 
-section{
-    display: flex;
-    flex-direction: column;
+body {
+  margin: 0;
+  padding: 0 32px 96px;
+  background: var(--bg);
+  color: var(--ink);
+  font-family: var(--sans);
+  -webkit-font-smoothing: antialiased;
+}
+
+#root > * {
+  max-width: 1080px;
+  margin: 0 auto;
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--serif);
+  font-weight: 400;
+  letter-spacing: -0.01em;
+  margin: 0;
+}
+
+p {
+  margin: 0;
+  text-wrap: pretty;
+}
+
+a {
+  color: var(--orange);
+  text-decoration: none;
+  border-bottom: 1px solid oklch(0.83 0.05 40);
+}
+
+a:hover {
+  border-bottom-color: var(--orange);
+}
+
+/* Header */
+header {
+  padding: 72px 0 44px;
+  border-bottom: 1px solid var(--line);
+}
+
+header .kicker {
+  font-family: var(--mono);
+  font-size: 11.5px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--orange);
+}
+
+header h1 {
+  font-size: clamp(44px, 7vw, 86px);
+  line-height: 0.98;
+  letter-spacing: -0.02em;
+  margin: 18px 0 0;
+  max-width: 16ch;
+}
+
+header .lede {
+  margin-top: 24px;
+  font-size: 16.5px;
+  line-height: 1.6;
+  max-width: 52ch;
+  color: var(--ink-soft);
+}
+
+/* Layout */
+section {
+  display: flex;
+  flex-direction: column;
+}
+
+.phase {
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  align-items: start;
+  gap: 32px;
+  padding: 52px 0;
+  border-bottom: 1px solid var(--line);
+}
+
+.phase:last-child {
+  border-bottom: 0;
+}
+
+.phase-desc {
+  position: sticky;
+  top: 32px;
+}
+
+.phase-desc p:first-child {
+  font-family: var(--mono);
+  font-size: 11px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: oklch(0.62 0.012 70);
+}
+
+.phase-desc h2 {
+  font-size: 30px;
+  margin: 6px 0 10px;
+}
+
+.phase-desc p:last-child {
+  font-size: 13.5px;
+  line-height: 1.55;
+  color: var(--ink-mute);
 }
 
 .phase-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 16px;
-  padding: 52px 0;
 }
 
+/* Cards */
 .card {
-  border: 1px solid #ccc;
-  border-radius: 8px;
-  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 20px 22px;
+  background: var(--surface);
+  border: 1px solid oklch(0.89 0.008 80);
+  border-radius: 5px;
   cursor: pointer;
-  transition: .4s ease-in-out;
-}
-.card:hover{
-    transform: scale(1.04);
+  transition: transform 0.18s ease, border-color 0.18s ease;
 }
 
-span,
-.step{
-    color: var(--orange);
+.card:hover {
+  transform: translateY(-2px);
+  border-color: oklch(0.62 0.12 40);
+}
+
+.card-head {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.card-head h2 {
+  font-size: 26px;
+}
+
+.card p {
+  font-size: 14.5px;
+  line-height: 1.6;
+  color: var(--ink-soft);
+}
+
+.step {
+  font-family: var(--mono);
+  font-size: 12px;
+  color: var(--orange);
+}
+
+/* Build note */
+.build {
+  display: flex;
+  gap: 10px;
+  padding-top: 12px;
+  border-top: 1px dashed var(--line);
+}
+
+.build span {
+  font-family: var(--mono);
+  font-size: 10.5px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--orange);
+  padding-top: 2px;
+}
+
+.build p {
+  font-size: 13.5px;
+  line-height: 1.5;
+  color: oklch(0.45 0.012 70);
+}
+
+/* Responsive */
+@media (max-width: 760px) {
+  body {
+    padding: 0 20px 64px;
+  }
+
+  header {
+    padding: 48px 0 32px;
+  }
+
+  .phase {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding: 40px 0;
+  }
+
+  .phase-desc {
+    position: static;
+  }
 }
