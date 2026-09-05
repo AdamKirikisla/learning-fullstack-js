@@ -1,3 +1,5 @@
+import React from "./Frontend/React"
+
 export default function Frontend(){
     return(
                 <section className="phase">
@@ -7,6 +9,8 @@ export default function Frontend(){
                     <p>---</p>
                   </div>
                   <div className="phase-grid">
+                    <React />
+
                     
                     
                   </div>
