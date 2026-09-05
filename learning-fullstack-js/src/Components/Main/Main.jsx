@@ -1,6 +1,7 @@
 import Foundations from "./Foundations"
 import Backend from "./Backend"
 import Frontend from "./Frontend"
+import FullStack from "./FullStack"
 
 export default function Main(){
     return(
@@ -8,6 +9,7 @@ export default function Main(){
         <Foundations />
         <Backend />
         <Frontend />
+        <FullStack />
         </section>
 
     )
