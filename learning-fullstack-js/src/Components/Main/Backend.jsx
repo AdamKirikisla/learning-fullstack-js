@@ -1,4 +1,5 @@
 import NodeJs from "./Backend/NodeJs"
+import Databases from "./Backend/Databases"
 
 export default function Backend(){
     return(
@@ -10,6 +11,7 @@ export default function Backend(){
               </div>
               <div className="phase-grid">
                 <NodeJs />
+                <Databases />
                 
               </div>
             </section>

@@ -1,0 +1,18 @@
+export default function Databases(){
+    return(
+        <div className="card">
+            <div className="card-head">
+                <p className="step">06</p>
+                <h2>Databases</h2>
+            </div>
+            <p>A database is where your app's data is saved permanently. 
+                SQL databases store rows in tables with a fixed shape — 
+                PostgreSQL, MySQL, SQLite. NoSQL databases store flexible documents — 
+                MongoDB. You only need the concept now: pick one (Postgres or SQLite) and use it.</p>
+            <div className="build">
+                <span>Build</span>
+                <p>---</p>
+            </div>
+        </div>
+    )
+}
