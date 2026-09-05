@@ -1,5 +1,5 @@
 import React from "./Frontend/React"
-
+import TypeScript from "./Frontend/TypeScript"
 export default function Frontend(){
     return(
                 <section className="phase">
@@ -10,6 +10,7 @@ export default function Frontend(){
                   </div>
                   <div className="phase-grid">
                     <React />
+                    <TypeScript />
 
                     
                     
