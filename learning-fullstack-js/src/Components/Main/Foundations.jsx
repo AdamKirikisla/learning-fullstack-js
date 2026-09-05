@@ -9,7 +9,7 @@ export default function Foundations(){
           <div className="phase-desc">
             <p>PHASE 01</p>
             <h2>Foundations</h2>
-            <p>The browser platform. Nothing you learn later replaces this.</p>
+            <p>Obligatory no matter what stack you use — this is the fundamentals everything else sits on.</p>
           </div>
           <div className="phase-grid">
             <HTML />

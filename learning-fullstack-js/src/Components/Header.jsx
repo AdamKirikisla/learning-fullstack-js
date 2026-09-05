@@ -4,9 +4,8 @@ export default function Header() {
             <p className="kicker">A roadmap in ten steps</p>
             <h1>Learning full-stack JavaScript</h1>
             <p className="lede">Go in order. Each step assumes the one before it, 
-                and each one ends with something you built and pushed. 
-                Depth comes later, the goal here is a working mental 
-                model of the whole stack.</p>
+                and each one ends with something you built and pushed. Note: this roadmap stays simple and doesn't go into depth. It's just a general understanding of how the pieces fit together. 
+                </p>
         </header>
     )
 }

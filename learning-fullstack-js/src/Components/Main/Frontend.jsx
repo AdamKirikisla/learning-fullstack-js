@@ -6,7 +6,7 @@ export default function Frontend(){
                   <div className="phase-desc">
                     <p>PHASE 03</p>
                     <h2>Frontend</h2>
-                    <p>---</p>
+                    <p>The tools real frontends are built with: React for structuring the interface, TypeScript for catching errors before they ship.</p>
                   </div>
                   <div className="phase-grid">
                     <React />

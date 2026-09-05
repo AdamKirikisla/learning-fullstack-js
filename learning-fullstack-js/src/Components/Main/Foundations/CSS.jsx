@@ -9,7 +9,7 @@ export default function CSS(){
                 Learn flexbox and grid, that's 80% of real layout work.</p>
             <div className="build">
                 <span>Build</span>
-                <p>Rebuild a landing page you admire, from screenshot only.</p>
+                <p>Add styling to your portfolio website from step 01 (HTML).</p>
             </div>
         </div>
     )

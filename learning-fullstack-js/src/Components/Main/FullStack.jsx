@@ -6,7 +6,7 @@ export default function FullStack(){
                       <div className="phase-desc">
                         <p>PHASE 04</p>
                         <h2>Full stack</h2>
-                        <p>---</p>
+                        <p>The frontend and backend in one codebase, deployed as a single app.</p>
                       </div>
                       <div className="phase-grid">
                         <NextJs />

@@ -8,7 +8,7 @@ export default function Backend(){
               <div className="phase-desc">
                 <p>PHASE 02</p>
                 <h2>Backend</h2>
-                <p>Same language, no browser. Where the data lives.</p>
+                <p>The server-side logic, databases, and infrastructure that power an app from behind the scenes.</p>
               </div>
               <div className="phase-grid">
                 <NodeJs />

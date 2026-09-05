@@ -7,10 +7,10 @@ export default function JavaScript(){
             </div>
             <p>JavaScript adds logic to the webpage: react to clicks, change content, 
                 load data from a server. This is the biggest step — 
-                React, Node and TypeScript are all essentially JavaScript.</p>
+                Essential for later phases</p>
             <div className="build">
                 <span>Build</span>
-                <p>A to-do app with zero libraries. Keep it — you'll port it twice.</p>
+                <p>A to-do app with zero libraries.</p>
             </div>
         </div>
     )
