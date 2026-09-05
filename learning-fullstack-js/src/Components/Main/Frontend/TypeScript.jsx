@@ -2,7 +2,7 @@ export default function TypeScript(){
     return(
         <div className="card">
             <div className="card-head">
-                <p className="step">09</p>
+                <p className="step">10</p>
                 <h2>TypeScript</h2>
             </div>
             <p>TypeScript is a separate language that compiles down to plain JavaScript. It adds labels describing the shape of your data, so mistakes are caught by the compiler instead of by a user.</p>

@@ -1,6 +1,7 @@
 import NodeJs from "./Backend/NodeJs"
 import Databases from "./Backend/Databases"
 import ExpressJs from "./Backend/ExpressJs"
+import HTTP from "./Backend/HTTP"
 
 export default function Backend(){
     return(
@@ -11,6 +12,7 @@ export default function Backend(){
                 <p>The server-side logic, databases, and infrastructure that power an app from behind the scenes.</p>
               </div>
               <div className="phase-grid">
+                <HTTP />
                 <NodeJs />
                 <Databases />
                 <ExpressJs />

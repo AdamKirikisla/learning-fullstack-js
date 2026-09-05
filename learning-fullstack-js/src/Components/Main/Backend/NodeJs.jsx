@@ -2,7 +2,7 @@ export default function NodeJs(){
     return(
         <div className="card">
             <div className="card-head">
-                <p className="step">05</p>
+                <p className="step">06</p>
                 <h2>Node.js</h2>
             </div>
             <p>Node lets you run JavaScript outside the browser — 

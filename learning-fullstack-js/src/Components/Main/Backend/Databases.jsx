@@ -2,7 +2,7 @@ export default function Databases(){
     return(
         <div className="card">
             <div className="card-head">
-                <p className="step">06</p>
+                <p className="step">07</p>
                 <h2>Databases</h2>
             </div>
             <p>A database is where your app's data is saved permanently. 
